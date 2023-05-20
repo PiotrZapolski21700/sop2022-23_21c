@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Wyrażenie regularne do sprawdzania poprawności kodu pocztowego
+kod_regex='^[0-9][0-9-]*[0-9]$'
+
+# Pobieranie kodu pocztowego od użytkownika
+read -p "Podaj kod pocztowy: " kod
+
+# Sprawdzenie, czy kod pocztowy jest poprawny
+if [[ $kod =~ $kod_regex ]]; then
+  echo "Kod pocztowy $kod jest poprawny."
+else
+  echo "Kod pocztowy $kod jest niepoprawny."
+fi

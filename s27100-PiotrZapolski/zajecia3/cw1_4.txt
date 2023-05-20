@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(ls | wc -l) -ge 5 ]; then
+	echo "Plikow jest wiecej niz 5"
+else
+	echo "PLikow jest 5 lub mniej"
+fi

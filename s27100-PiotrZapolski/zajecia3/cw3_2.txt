@@ -1,0 +1,25 @@
+#!/bin/bash
+
+getfibonacci () {
+	n=$1
+	fn=0
+
+	if [ $n -eq 0 ]; 
+	then
+		return 0
+	elif [ $n -eq 1 ]; 
+	then
+		return 1
+	else
+		a=0
+		b=1
+		$fn=((a + b))
+		a=$(fibonacci $((n-1)))
+		b=$(fibonacci $((n-2)))
+		a=$b
+		b=$fn
+		echo $fn
+	fi
+}
+
+getfibonacci 4

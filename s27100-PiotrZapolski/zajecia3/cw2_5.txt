@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $(ls -p | grep -v /); do
+	echo -e "\n $i \n"
+	cat $i
+	echo -e "\n"
+	tac $i
+done

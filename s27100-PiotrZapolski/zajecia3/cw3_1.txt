@@ -1,0 +1,15 @@
+#!/bin/bash
+
+KOLORY=(czarny='\e[0;30m' czerwony='\e[0;31m' zielony='\e[0;32m' zolty='\e[0;33m' niebieski='\e[0;34m')
+
+
+function setKolor {
+	for i in ${KOLORY[@]}; do
+		if [[ $2 == $(echo $i | sed 's/=.*//') ]]; then
+			echo -e "$(echo $i | sed 's/.*=//')${1}\e[0m"
+		fi
+	done 
+}
+
+
+setKolor test zielony

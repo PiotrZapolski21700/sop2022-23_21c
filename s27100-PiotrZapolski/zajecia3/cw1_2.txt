@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILE="$(pwd)/config.cfg"
+
+if [ -f "$FILE" ]; then
+	./config.cfg
+elif [[ $# != 0 ]]; then
+	./$1
+else
+	echo "Error nie znaleziono pliku"
+fi

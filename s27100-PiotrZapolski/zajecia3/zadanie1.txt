@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Wyrażenie regularne do sprawdzania poprawności polskiego imienia
+imie_regex='^[A-ZŁŃÓŚŹĆĄĘ][a-zążśźćęóńł]+$'
+
+# Pobieranie imienia od użytkownika
+read -p "Podaj imię: " imie
+
+# Sprawdzenie, czy imię jest poprawne
+if [[ $imie =~ $imie_regex ]]; then
+  echo "Imię $imie jest poprawne."
+else
+  echo "Imię $imie jest niepoprawne."
+fi

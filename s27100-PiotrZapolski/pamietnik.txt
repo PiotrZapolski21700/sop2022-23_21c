@@ -4,4 +4,8 @@ Instalować debiana na virtualboxie
 
 2023-03-18
 Moj kochany pamietniczku na dzisiejszych zajeciach nauczylem/lam sie:
-Pisać skrypty w powłoce bash systemów unixowych
+wielu orzydatnych rzeczyw powloce bash miedzy innymi korzystania z komendy sed
+
+2023-04-18
+Moj kochany pamietniczku na dzisiejszych zajeciach nauczylem/lam sie:
+Jak poprawnie korzystac z ifow petli oraz funcki w skryptach bash
