@@ -36,6 +36,10 @@ int main(int argc, char* argv[]) {
     int n;
     fscanf(file, "%d", &n);
     int* arr = (int*)malloc(n * sizeof(int));
+    if (arr == NULL) {
+        printf("Failed to allocate memory.\n");
+        return 1;
+    }
 
     for (idx1 = 0; idx1 < n; idx1++) {
         fscanf(file, "%d", &arr[idx1]);
